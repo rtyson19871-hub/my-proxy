@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(__dirname));
 
 app.use('/proxy', createProxyMiddleware({
-    target: 'https://cdn.jsdelivr.net/gh/rtyson19871-hub/LumenProxy@c530fd2/index.svg', // <-- CHANGE THIS to your website
+    target: 'https://cdn.jsdelivr.net/gh/rtyson19871-hub/LumenProxy@main/index.svg', // <-- CHANGE THIS to your website
     changeOrigin: true,
     pathRewrite: { '^/proxy': '' },
     onProxyRes: (proxyRes) => {
